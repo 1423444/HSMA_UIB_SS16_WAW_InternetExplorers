@@ -1,2 +1,2 @@
-# AwesomeBoilerplate
-The best Boilerplate ever exists
+# Boilerplate der Internet Explorers
+Explore the Internet
