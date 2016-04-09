@@ -1,16 +1,25 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
-  <title>Awesome Boilerplate</title>
+  <title>Internet Explorers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="design/index.css">
 </head>
 
 <body>
-	<header role="banner">
+	<header>
+		<h2 style="text-align: center">
+			<a href="home.html"> home</a>  
+			<a href="#addplayer"> add player</a> 
+			<a href="players.html"> players</a> 
+		
+		</h2>
+		
+		
+	
 		<div>
-			<h1><span>Awesome</span> Boilerplate</h1>
+			<h1><span>Internet</span> Explorers</h1>
 			<p>
 				<a href="#content">Zum Inhalt</a><br>
 				<a href="#footer">Folge Uns</a><br>
@@ -19,64 +28,31 @@
 		</div>
 	</header>
 	<main>
-		<section>
-			<article id ="kitties">
-				<header id="anmeldung"><h1>Anmeldung</h1></header>
-				<br/>
-				<input type="text" value="Name" />
-				<input type="text" value="Nachname" /><br/>
-				<input type="email" value="eMail" />
-				<input type="tel" value="Telefonnummer" /><br/>
-				<input type="date" value="Geburtstag" />
-				<select value="UIB"><br/>
-					<option>IB</option>
-					<option>IMB</option>
-					<option> UIB</option>
-				</select><br/>
-				<input type="submit"/>
+		<section id="addplayer">
+		
+			<form>
+				Vorname: <input type="text" name="vorname" required><br>
+				Nachname: <input type="text" name="name" required><br>
+				Verein: <input type="text" name="verein" required><br>
+				Headcoach: <input type="text" name="hcoach" required><br>
+				Assistant Coach: <input type="text" name="acoach" required><br>
+				Aktiv: <input type="checkbox" name="aktiv" ><br>
+				Position: 	<select name="position" size="1" required> 
+							<option value="center">Center</option >
+							<option value="guard">Guard</option>
+							<option value="power forward">Power Forwards</option>
+							<option value="wing" selected="selected"> Wing </option>
+							<option value="small forward">Small Forward</option> 
+							</select> <br>
+						
+				Geburtsjahr : <input type="number" name="jahr" required><br>
+				R&uumlckennummer: <input type="number" name="number" required><br>
+				Favorit markieren: <input type="checkbox" name="favorit" ><br>
+				<input type="submit">
+				
+		
+			</form>
 
-			</article>
-
-		</section>
-		<section id="content">
-			<article>
-				<figure>
-					<div class="icon icon-learn"></div>
-				</figure>
-				<h3><a href="https://github.com/WAWSS16/waw">Learn to Code</a></h3>
-				<p>
-					Mit der Vorlesung zu Webanwendungen lernst du nicht nur wie man geile
-					Webseiten erstellt, sondern auch wie Du effizienter Arbeiten kannst mit entsprechenden Tools.
-				</p>
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-power"></div>
-				</figure>
-				<h3><a href="https://github.com/WAWSS16/Organization">Get Superpowers</a></h3>
-				<p>
-					Mit den Meilensteinen wirst Du durch Aufgaben geführt um so nach und nach eine
-					vollständige Webapplikation zu entwickeln.
-				</p>
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-help"></div>
-				</figure>
-				<h3><a href="https://help.github.com/articles/be-social/">Help Others</a></h3>
-				<p>
-					Das wichtigste hierbei ist allerdings auch anderen zu helfen und sie zu unterstützen.
-			</article>
-			<article>
-				<figure>
-					<div class="icon icon-follow"></div>
-				</figure>
-				<h3>Follow Us</h3>
-				<p>
-					Falls du fragen hast, kannst du dich jederzeit an 
-					<a href="https://github.com/CodeKittey">@Codekittey</a>, wenden oder eine Email schreiben: <a href="mailto:m.kraus@hs-mannheim.de">m.kraus@hs-mannheim.de</a>
-				</p>
-			</article>
 		</section>
 	</main>
 	<footer id="footer">
