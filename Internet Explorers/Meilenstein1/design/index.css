@@ -1,4 +1,14 @@
 
+
+
+label {
+	text-align:center;
+    width: 10em;
+    display: block;
+    float: center;
+}
+
+
 @font-face {
 	font-family: 'icon';
 	src: url('icon.eot');
