@@ -1,0 +1,37 @@
+a:link {
+	color: peach;
+}
+
+a:active{
+	color: red;
+}
+
+a:visited{
+	color: violet;
+}
+
+a:hover{
+	color: white;
+	font-weight:bold;
+}
+p{
+	color:yellow;
+	font-family: "helvetica";
+	text-align: center;
+}
+
+h1, h3{
+	color:white;
+	text-align: center;
+	font-family: "helvetica";
+}
+
+body{
+	background-image: url("http://www.wired.com/wp-content/uploads/2016/01/Internet-Explorer_1.gif");
+	/*background-position: -300px 5%; */
+	background-position: relative;
+	text-align: center;
+	font-family: "helvetica";
+	background-size: 97%;
+	}
+

@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <title>Internet Explorers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="design/index.css">
+</head>
+
+<body>
+	<header>
+		<h2 style="text-align: center">
+			<a href="home.html"> home</a>  
+			<a href="#addplayer"> add player</a> 
+			<a href="players.html"> players</a> 
+		
+		</h2>
+		
+		
+	
+		<div>
+			<h1><span>Internet</span> Explorers</h1>
+			<p>
+				<a href="#content">Zum Inhalt</a><br>
+				<a href="#footer">Folge Uns</a><br>
+				<a href="#kitties">Anmeldung</a>
+			</p>
+		</div>
+	</header>
+	<main>
+		<section id="addplayer">
+		
+			<form>
+				Vorname: <input type="text" name="vorname" required><br>
+				Nachname: <input type="text" name="name" required><br>
+				Verein: <input type="text" name="verein" required><br>
+				Headcoach: <input type="text" name="hcoach" required><br>
+				Assistant Coach: <input type="text" name="acoach" required><br>
+				Aktiv: <input type="checkbox" name="aktiv" ><br>
+				Position: 	<select name="position" size="1" required> 
+							<option value="center">Center</option >
+							<option value="guard">Guard</option>
+							<option value="power forward">Power Forwards</option>
+							<option value="wing" selected="selected"> Wing </option>
+							<option value="small forward">Small Forward</option> 
+							</select> <br>
+						
+				Geburtsjahr : <input type="number" name="jahr" required><br>
+				R&uumlckennummer: <input type="number" name="number" required><br>
+				Favorit markieren: <input type="checkbox" name="favorit" ><br>
+				<input type="submit">
+				
+		
+			</form>
+
+		</section>
+	</main>
+	<footer id="footer">
+		<img src="img/nodeschool.svg"></a>
+	</footer>
+	<script src="design/index.js"></script>
+</body>
+</html>
