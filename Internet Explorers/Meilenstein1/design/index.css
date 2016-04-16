@@ -3,7 +3,7 @@
 
 label {
     float: left;
-    width: 540px;
+    width: 800px;
     padding-top: 3px;
     text-align: right;
     margin-right: 30px;
@@ -110,13 +110,13 @@ body {
 	font-family: 'museo-sans-300';
 	font-size: 16px;
 	color: #ffffff;
-	background: #333333;
+	background: #071418;
 }
 
 header {
 	width: 100%;
 	padding: 128px 0px;
-	background-color: #ffe51f;
+	background-color: #BDBDBD;
 	background-image: url('./background.png');
 	background-position: 0px 0px;
 	background-blend-mode: multiply;
@@ -301,7 +301,7 @@ main section article.social a:focus {
 footer {
 	width: 100%;
 	padding: 64px 0px;
-	background-color: #ffe51f;
+	background-color: #BDBDBD;
 	background-image: url('./background.png');
 	background-size: 25%;
 	background-position: 0px 0px;
