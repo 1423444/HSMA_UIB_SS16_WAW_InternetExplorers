@@ -1,9 +1,18 @@
-
-
+/*
+ * index.css
+ * 
+ * This file is part of the Internet Explorers site.
+ * Written by
+ *   Johannes Heiler
+ *   Lucas Kneis
+ *   Tobias Juenemann
+ * 
+ * Last updated: 16. April 2016
+ */
 
 label {
     float: left;
-    width: 800px;
+    width: 640px;
     padding-top: 3px;
     text-align: right;
     margin-right: 30px;
@@ -13,111 +22,30 @@ input {
     display: block;
     font-size: 15px;
     margin-bottom: 10px;
-    
-	
 }
 
 select {
     display: block;
     font-size: 15px;
     margin-bottom: 10px;
-    
 }
-
-
-@font-face {
-	font-family: 'icon';
-	src: url('icon.eot');
-	src: url('icon.eot?#iefix') format('embedded-opentype'),
-		 url('icon.woff') format('woff'),
-		 url('icon.ttf') format('truetype'),
-		 url('icon.svg#icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'museo-sans-300';
-	src: url('museo-sans-300.eot');
-	src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('museo-sans-300.woff2') format('woff2'),
-		 url('museo-sans-300.woff') format('woff'),
-		 url('museo-sans-300.ttf') format('truetype'),
-		 url('museo-sans-300.svg#museo_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-300';
-	src: url('source-sans-300.eot');
-	src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-300.woff2') format('woff2'),
-		 url('source-sans-300.woff') format('woff'),
-		 url('source-sans-300.ttf') format('truetype'),
-		 url('source-sans-300.svg#source_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-400';
-	src: url('source-sans-400.eot');
-	src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-400.woff2') format('woff2'),
-		 url('source-sans-400.woff') format('woff'),
-		 url('source-sans-400.ttf') format('truetype'),
-		 url('source-sans-400.svg#source_sans400') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-700';
-	src: url('source-sans-700.eot');
-	src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-700.woff2') format('woff2'),
-		 url('source-sans-700.woff') format('woff'),
-		 url('source-sans-700.ttf') format('truetype'),
-		 url('source-sans-700.svg#source_sans700') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-.icon:before {
-	font-family: 'icon';
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	vertical-align: top;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-learn:before  { content: '\e05c'; }
-.icon-power:before  { content: '\e026'; }
-.icon-help:before   { content: '\e08a'; }
-.icon-start:before  { content: '\e017'; }
-.icon-follow:before { content: '\e03b'; }
-
-
 
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'museo-sans-300';
+	font-family: 'Arial';
 	font-size: 16px;
-	color: #ffffff;
-	background: #071418;
+	color: #ffe3bf;
+	background-color: #5d7cba;
 }
+
+/* Header */
 
 header {
 	width: 100%;
 	padding: 128px 0px;
-	background-color: #BDBDBD;
-	background-image: url('./background.png');
+	background-color: #003eba;
+	background-image: url('../img/background.png');
 	background-position: 0px 0px;
 	background-blend-mode: multiply;
 	background-repeat: repeat repeat;
@@ -129,78 +57,54 @@ header > div {
 	padding: 64px;
 	width: 100%;
 	max-width: 640px;
-	color: #ffffff;
-	background: rgba(0,0,0,0.1) url('../img/heidelberg.png');
-	background-position: center center;
-	background-repeat: no-repeat;
-	border-radius: 8px;
+	color: #ffe3bf;
+	background-color: #5d7cba;
+	border-radius: 12px;
 	text-align: center;
-}
-
-header > div > p > label {
-	display: inline-block;
-	width: 45%;
-	float: left;
-	text-align: right;
-	color: #333333;
-}
-
-header > div > p > a {
-	display: inline-block;
-	width: 45%;
-	float: right;
-	text-align: left;
 }
 
 header > div > p:after {
 	content: " ";
 	display: table;
 	clear: both;
-	*zoom: 1;
 }
 
 header h1 {
 	display: block;
+	color: #ffc77f;
 	margin: 0px;
 	padding: 0px;
-	font-family: 'source-sans-700';
+	font-family: 'Arial';
 	font-size: 40px;
-}
-
-header h1 > span {
-	color: #333333;
 }
 
 header p {
 	margin: 32px 0px 0px 0px;
-	font-family: 'museo-sans-300';
+	font-family: 'Arial';
 	font-size: 20px;
 }
 
 header a {
-	color: #d0494b;
+	color: #ffe3bf;
 	font-weight: bold;
 	text-decoration: none;
-	transition: 250ms all ease-out;
 }
 
 header a:hover,
 header a:focus {
-	color: #333333;
-	transition: 250ms all ease-out;
+	color: #ffc77f;
 }
 
-header small {
-	display: inline-block;
-	margin: 2em 0px 0px 0px;
-	font-size: 16px;
-	color: #333333;
-}
-
+/* Main */
 
 main section {
 	padding: 16px 0px;
 	text-align: center;
+}
+
+main h2 {
+	color: #ffc77f;
+	font-family: 'Arial';
 }
 
 main section:nth-of-type(1) {
@@ -214,7 +118,6 @@ main section article {
 	margin: 16px;
 	padding: 16px;
 	vertical-align: top;
-	background-color: rgba(255,255,255,0.1);
 	border-radius: 8px;
 }
 
@@ -232,18 +135,14 @@ main section article figure div {
 	height: 112px;
 	line-height: 112px;
 	font-size: 48px;
-	border: 8px solid #e0b113;
 	background: #ffe51f;
 	border-radius: 128px;
-	transition: all 250ms ease-out;
 }
 
 main section article:hover figure div {
 	width: 96px;
 	height: 96px;
 	line-height: 96px;
-	border: 16px solid #b33f40;
-	background: #d0494b;
 	font-size: 64px;
 }
 
@@ -251,11 +150,6 @@ main section article h3 {
 	margin: 32px 0px;
 	font-size: 32px;
 	text-align: center;
-	transition: all 250ms ease-out;
-}
-
-main section article:hover h3 {
-	color: #d0494b;
 }
 
 main section article p {
@@ -264,16 +158,14 @@ main section article p {
 }
 
 main section article a {
-	color: #d0494b;
+	color: #ffe3bf;
 	font-weight: bold;
 	text-decoration: none;
-	transition: 250ms all ease-out;
 }
 
 main section article a:hover,
 main section article a:focus {
-	color: #ffe51f;
-	transition: 250ms all ease-out;
+	color: #ffc77f;
 }
 
 
@@ -294,16 +186,16 @@ main section article.social a {
 
 main section article.social a:hover,
 main section article.social a:focus {
-	background: #ffe51f;
+	background: #ffc77f;
 }
 
+/* Footer */
 
 footer {
 	width: 100%;
 	padding: 64px 0px;
-	background-color: #BDBDBD;
-	background-image: url('./background.png');
-	background-size: 25%;
+	background-color: #003eba;
+	background-image: url('../img/background.png');
 	background-position: 0px 0px;
 	background-blend-mode: multiply;
 	background-repeat: repeat repeat;
@@ -317,40 +209,4 @@ footer a {
 
 footer a img {
 	width: 100%;
-}
-
-
-/*
- * MEDIA QUERIES
- */
-
-@media (max-width: 420px) {
-
-	header > div {
-		width: auto;
-		max-width: initial;
-	}
-
-	header p {
-		line-height: 2em;
-	}
-
-	main section article {
-		display: block;
-		margin: 16px 0px;
-		width: auto;
-	}
-
-}
-
-@media (max-width: 320px) {
-
-	header > div {
-		padding: 16px 0px;
-	}
-
-	header p {
-		text-align: justify;
-	}
-
 }

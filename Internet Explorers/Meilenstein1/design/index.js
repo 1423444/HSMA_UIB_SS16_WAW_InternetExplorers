@@ -1,4 +1,3 @@
-
 (function(global) {
 
 	var header  = document.querySelector('header');
