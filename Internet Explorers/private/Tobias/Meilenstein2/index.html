@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<!--
+  -- index.html
+  -- 
+  -- This file is part of the Internet Explorers site.
+  -- Written by
+  --   Johannes Heiler
+  --   Lucas Kneis
+  --   Tobias Juenemann
+  -- 
+  -- Last updated: 28. April 2016
+  -->
+<html lang="de">
+<head>
+	<title>Internet Explorers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="design/index.css">
+	<script type="text/javascript" src="eingabencheck.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Internet Explorers</h1>
+			<p>
+				<a href="home.html">home</a>&nbsp;&nbsp;&nbsp;
+				<a href="#addplayer">add player</a>&nbsp;&nbsp;&nbsp;
+				<a href="players.html">players</a> 
+			</p>
+		</div>
+	</header>
+	<main>
+		<section id="addplayer">
+			<h2>Add player</h2>
+			<form name="addplayerform" action="http://martinakraus.net/createPlayer.php" method="get">
+				<center>
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td valign="top">Vorname:</td>
+							<td><input type="text" name="vorname" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Nachname:</td>
+							<td><input type="text" name="name" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Verein:</td>
+							<td><input type="text" name="verein" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Headcoach:</td>
+							<td><input type="text" name="hcoach" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Assistant Coach:</td>
+							<td><input type="text" name="acoach" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Aktiv:</td>
+							<td><input type="checkbox" name="aktiv"></td>
+						</tr>
+						<tr>
+							<td valign="top">Position:</td>
+							<td>
+								<select name="position" size="1" required> 
+									<option value="center">Center</option >
+									<option value="guard">Guard</option>
+									<option value="power forward">Power Forwards</option>
+									<option value="wing" selected="selected">Wing</option>
+									<option value="small forward">Small Forward</option> 
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">Geburtsjahr:</td>
+							<td><input type="number" name="jahr" required></td>
+						</tr>
+						<tr>
+							<td valign="top">R&uuml;ckennummer:</td>
+							<td><input type="number" name="number" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Favorit markieren:</td>
+							<td><input type="checkbox" name="favorit"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit" onclick="return inputCheck();"></td>
+						</tr>
+					</table>
+				</center>
+			</form>
+		</section>
+	</main>
+	<footer id="footer">
+		<div style="text-align:center;">
+			<img src="img/logo.png"></a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="design/index.js"></script>
+</body>
+</html>
