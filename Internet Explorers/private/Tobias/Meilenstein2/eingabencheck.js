@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 28. April 2016
+ * Last updated: 30. April 2016
  */
 
 function isText(eingabe) {

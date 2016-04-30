@@ -8,7 +8,7 @@
   --   Lucas Kneis
   --   Tobias Juenemann
   -- 
-  -- Last updated: 28. April 2016
+  -- Last updated: 30. April 2016
   -->
 <html lang="de">
 <head>
@@ -16,6 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
 	<link rel="stylesheet" href="design/index.css">
 	<script type="text/javascript" src="eingabencheck.js"></script>
+	<script type="text/javascript" src="datenSenden.js"></script>
 </head>
 <body>
 	<header>
@@ -31,7 +32,7 @@
 	<main>
 		<section id="addplayer">
 			<h2>Add player</h2>
-			<form name="addplayerform" action="http://martinakraus.net/createPlayer.php" method="get">
+			<form name="addplayerform">
 				<center>
 					<table border="0" cellpadding="0" cellspacing="0">
 						<tr>
@@ -84,7 +85,7 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td><input type="submit" onclick="return inputCheck();"></td>
+							<td><input type="submit" onclick="sendForm();"></td>
 						</tr>
 					</table>
 				</center>
