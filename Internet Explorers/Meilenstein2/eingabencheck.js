@@ -30,37 +30,36 @@ function isText(eingabe) {
 }
 
 function checkVorname() {
-	var eingabe = document.addplayerform.vorname.value;
-	
+	var eingabe = document.getElementsByName("vorname")[0].value;
 	return isText(eingabe);
 }
 
 function checkNachname() {
-	var eingabe = document.addplayerform.name.value;
+var eingabe = document.getElementsByName("name")[0].value;
 	
 	return isText(eingabe);
 }
 
 function checkVerein() {
-	var eingabe = document.addplayerform.verein.value;
+	var eingabe = document.getElementsByName("verein")[0].value;
 	
 	return isText(eingabe);
 }
 
 function checkHeadcoach() {
-	var eingabe = document.addplayerform.hcoach.value;
+	var eingabe = document.getElementsByName("hcoach")[0].value;
 	
 	return isText(eingabe);
 }
 
 function checkAssistantcoach() {
-	var eingabe = document.addplayerform.acoach.value;
+	var eingabe = document.getElementsByName("acoach")[0].value;
 	
 	return isText(eingabe);
 }
 
 function checkRueckennummer() {
-	var eingabe = document.addplayerform.number.value;
+	var eingabe = document.getElementsByName("number")[0].value;
 	var rueckgabewert = true;
 	
 	// Eingabe keine Zahl
@@ -77,7 +76,7 @@ function checkRueckennummer() {
 }
 
 function checkGeburtsjahr() {
-	var eingabe = document.addplayerform.jahr.value;
+	var eingabe = document.getElementsByName("jahr")[0].value;
 	var rueckgabewert = true;
 	
 	// Eingabe keine Zahl
