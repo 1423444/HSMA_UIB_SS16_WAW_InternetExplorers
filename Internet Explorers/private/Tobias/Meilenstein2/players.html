@@ -8,7 +8,7 @@
   --   Lucas Kneis
   --   Tobias Juenemann
   -- 
-  -- Last updated: 30. April 2016
+  -- Last updated: 06. May 2016
   -->
 <html lang="de">
 <head>
@@ -18,10 +18,10 @@
 </head>
 <body>
 	<h1>Spieler</h1>
-	<table border="1" width="20%">
+	<table border="1" width="20%" id="players">
 		<tr>
-			<td colspan="3" style="text-align: center;">All</td>
-			<td colspan="3" style="text-align: center;">Favoriten</td>
+			<td colspan="3" style="text-align: center;"><a onclick="ladeTabelle('');">All</a></td>
+			<td colspan="3" style="text-align: center;"><a onclick="ladeTabelle('?favorites=true');">Favoriten</a></td>
 		</tr>
 		<tr>
 			<td>Name</td>
@@ -31,29 +31,7 @@
 			<td>Nummer</td>
 			<td>Jahr</td>
 		</tr>
-		<tr>
-			<td>Martina Kraus</td>
-			<td>Speyer</td>
-			<td>Harald</td>
-			<td>Center</td>
-			<td>14</td>
-			<td>1990</td>
-		</tr>
-		<tr>
-			<td>Jan Vetter</td>
-			<td>Berlin</td>
-			<td>Dirk</td>
-			<td>Wing</td>
-			<td>11</td>
-			<td>1963</td>
-		</tr>
 	</table>
-	
-	<!-- Test -->
-	<script>
-	ladeTabelle();
-	</script>
-	
 	<br>
 	<a href="index.html">Zur&uuml;ck</a>
 </body>
