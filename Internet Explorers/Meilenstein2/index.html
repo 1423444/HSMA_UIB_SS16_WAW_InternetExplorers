@@ -15,15 +15,15 @@
 	<title>Internet Explorers</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
 	<link rel="stylesheet" href="design/index.css">
-	<script type="text/javascript" src="js/eingabencheck.js"></script>
-	<script type="text/javascript" src="js/datenSenden.js"></script>
+	<script type="text/javascript" src="design/index.js"></script>
+	<script type="text/javascript" src="js/checkForm.js"></script>
+	<script type="text/javascript" src="js/sendData.js"></script>
 </head>
 <body>
 	<header>
 		<div>
 			<h1>Internet Explorers</h1>
-			<p>
-				<a href="home.html">home</a>&nbsp;&nbsp;&nbsp;
+			<p> <a href="home.html">home</a>&nbsp;&nbsp;&nbsp;
 				<a href="#addplayer">add player</a>&nbsp;&nbsp;&nbsp;
 				<a href="players.html">players</a> 
 			</p>
@@ -77,7 +77,7 @@
 						</tr>
 						<tr>
 							<td valign="top">R&uuml;ckennummer:</td>
-							<td><input type="number" name="number" required></td>
+							<td><input type="number" min = "4" max="15" step="1" name="number" required></td>
 						</tr>
 						<tr>
 							<td valign="top">Favorit markieren:</td>
@@ -97,6 +97,5 @@
 			<img src="img/logo.png"></a>
 		</div>
 	</footer>
-	<script type="text/javascript" src="design/index.js"></script>
 </body>
 </html>
