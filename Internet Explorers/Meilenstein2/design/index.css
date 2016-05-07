@@ -7,8 +7,31 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 16. April 2016
+ * Last updated: 07. Mai 2016
  */
+
+
+
+.button {
+  padding: 5px 75px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  
+ 
+}
+
+
+
+.button:active {
+  background-color: #3e8e41;
+ 
+}
+
+
 
 label {
     float: left;
