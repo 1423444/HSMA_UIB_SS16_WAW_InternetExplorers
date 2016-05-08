@@ -18,16 +18,16 @@
   text-align: center;
   cursor: pointer;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #dc143c;
   border: none;
   
  
 }
 
+/*#3e8e41; */
 
-
-.button:active {
-  background-color: #3e8e41;
+.button:hover {
+  background-color:#dc143c; 		
  
 }
 

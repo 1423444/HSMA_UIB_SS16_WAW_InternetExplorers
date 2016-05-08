@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 06. May 2016
+ * Last updated: 08. Mai 2016
  */
 
 function ladeTabelle(param) {
@@ -53,3 +53,22 @@ function ladeTabelle(param) {
 	};
 	xhr.send(null);
 }
+
+function changer(type){
+	if(type == 'all'){
+		ladeTabelle('');
+		document.getElementById('all').style.backgroundColor = '#3e8e41';
+		document.getElementById('favorites').style.backgroundColor = '#dc143c';
+	}
+	
+	if (type == 'favorites'){
+		ladeTabelle('?favorites=true');
+		document.getElementById('favorites').style.backgroundColor = '#3e8e41';
+		document.getElementById('all').style.backgroundColor = '#dc143c';
+	}
+}
+	
+	
+	
+	
+	
