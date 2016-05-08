@@ -11,39 +11,37 @@
  */
 
 function isText(eingabe) {
-	var rueckgabewert = true;
 	
 	if(eingabe.length == 0) {
-		rueckgabewert = false;
+		return false;
 	} else {
 		for(var i = 0; i < eingabe.length; i++) {
 			var zeichen = eingabe.charCodeAt(i);
 			if(!(zeichen >= 65 && zeichen <= 122)) {
-				rueckgabewert = false;
+				return false;
 			}
 		}
 	}
-   
-	return rueckgabewert;
+	
+   return true;
 }
 
 function checkRueckennummer(eingabe) {
 	
 	// Eingabe keine Zahl
 	if(isNaN(eingabe)) {
-		rueckgabewert = false;
+		return false;
 	}
 	
 	// Wertebereich prüfen
 	if(!(eingabe >= 4 && eingabe <= 15)) {
-		rueckgabewert = false;
+		return false;
 	}
 	
-	return rueckgabewert;
+	return true;
 }
 	
 function checkGeburtsjahr(eingabe) {
-	var rueckgabewert = true;
 	
 	// Jahr ermitteln
 	var datum = new Date();
@@ -51,9 +49,10 @@ function checkGeburtsjahr(eingabe) {
 	
 	// Wertebereich prüfen
 	if(!(eingabe >= 0 && eingabe <= jahr)) {
-		rueckgabewert = false;
+		return false
 	}
-	return rueckgabewert;
+	
+	return true;
 }
 
 function inputCheck() {
