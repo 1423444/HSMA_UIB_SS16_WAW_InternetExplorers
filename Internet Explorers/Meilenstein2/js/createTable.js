@@ -24,8 +24,8 @@ function ladeTabelle(param) {
 			}
 			
 			// Neue Werte schreiben
-			for(varia = 0; i < data.length; i++) {
-				var nummer = i + 2;
+			for(var a = 0; a < data.length; a++) {
+				var nummer = a + 2;
 				
                 var tr = document.getElementById('players').insertRow(nummer);
                 var tdName = document.createElement('td');
@@ -35,12 +35,12 @@ function ladeTabelle(param) {
 				var tdNummer = document.createElement('td');
 				var tdJahr = document.createElement('td');
 				
-                tdName.innerHTML = data[i].name;
-				tdVerein.innerHTML = data[i].club;
-				tdCoach.innerHTML = data[i].coach;
-				tdPosition.innerHTML = data[i].position;
-				tdNummer.innerHTML = data[i].number;
-				tdJahr.innerHTML = data[i].year;
+                tdName.innerHTML = data[a].name;
+				tdVerein.innerHTML = data[a].club;
+				tdCoach.innerHTML = data[a].coach;
+				tdPosition.innerHTML = data[a].position;
+				tdNummer.innerHTML = data[a].number;
+				tdJahr.innerHTML = data[a].year;
                 
 				tr.appendChild(tdName);
 				tr.appendChild(tdVerein);
