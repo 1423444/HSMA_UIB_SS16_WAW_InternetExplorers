@@ -1,0 +1,213 @@
+/*
+ * index.css
+ * 
+ * This file is part of the Internet Explorers site.
+ * Written by
+ *   Johannes Heiler
+ *   Lucas Kneis
+ *   Tobias Juenemann
+ * 
+ * Last updated: 07. Mai 2016
+ */
+
+
+label {
+    float: left;
+    width: 640px;
+    padding-top: 3px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+input {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+select {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #ffe3bf;
+	background-color: #5d7cba;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	padding: 128px 0px;
+	background-color: #003eba;
+	background-image: url('../img/background.png');
+	background-position: 0px 0px;
+	background-blend-mode: multiply;
+	background-repeat: repeat repeat;
+}
+
+header > div {
+	display: block;
+	margin: 0px auto;
+	padding: 64px;
+	width: 100%;
+	max-width: 640px;
+	color: #ffe3bf;
+	background-color: #5d7cba;
+	border-radius: 12px;
+	text-align: center;
+}
+
+header > div > p:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+header h1 {
+	display: block;
+	color: #ffc77f;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial';
+	font-size: 40px;
+}
+
+header p {
+	margin: 32px 0px 0px 0px;
+	font-family: 'Arial';
+	font-size: 20px;
+}
+
+header a {
+	color: #ffe3bf;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+	color: #ffc77f;
+}
+
+/* Main */
+
+main section {
+	padding: 16px 0px;
+	text-align: center;
+}
+
+main h2 {
+	color: #ffc77f;
+	font-family: 'Arial';
+}
+
+main section:nth-of-type(1) {
+	padding: 15% 0px;
+}
+
+main section article {
+	display: inline-block;
+	width: 320px;
+	height: 420px;
+	margin: 16px;
+	padding: 16px;
+	vertical-align: top;
+	border-radius: 8px;
+}
+
+main section article figure {
+	display: block;
+	width: 144px;
+	height: 144px;
+	margin: 16px auto;
+	text-align: center;
+}
+
+main section article figure div {
+	display: inline-block;
+	width: 112px;
+	height: 112px;
+	line-height: 112px;
+	font-size: 48px;
+	background: #ffe51f;
+	border-radius: 128px;
+}
+
+main section article:hover figure div {
+	width: 96px;
+	height: 96px;
+	line-height: 96px;
+	font-size: 64px;
+}
+
+main section article h3 {
+	margin: 32px 0px;
+	font-size: 32px;
+	text-align: center;
+}
+
+main section article p {
+	font-size: 20px;
+	text-align: justify;
+}
+
+main section article a {
+	color: #ffe3bf;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main section article a:hover,
+main section article a:focus {
+	color: #ffc77f;
+}
+
+
+main section article.social {
+	width: auto;
+	height: auto;
+}
+
+
+main section article.social a {
+	display: inline-block;
+	margin: 16px;
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	vertical-align: top;
+}
+
+main section article.social a:hover,
+main section article.social a:focus {
+	background: #ffc77f;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	padding: 64px 0px;
+	background-color: #003eba;
+	background-image: url('../img/background.png');
+	background-position: 0px 0px;
+	background-blend-mode: multiply;
+	background-repeat: repeat repeat;
+}
+
+footer a {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
+
+footer a img {
+	width: 100%;
+}
