@@ -17,7 +17,7 @@ function isText(eingabe) {
 	} else {
 		for(var i = 0; i < eingabe.length; i++) {
 			var zeichen = eingabe.charCodeAt(i);
-			if(!((zeichen >= 65 && zeichen <= 122) || zeichen == 32)) {
+			if(!(zeichen >= 65 && zeichen <= 122)) {
 				return false;
 			}
 		}
