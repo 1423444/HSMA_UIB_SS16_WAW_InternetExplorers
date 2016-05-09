@@ -56,7 +56,7 @@ function checkGeburtsjahr(eingabe) {
 }
 
 function inputCheck() {
-
+	
 	var vorname = document.getElementsByName("vorname")[0].value;
 	var nachname = document.getElementsByName("name")[0].value;
 	var verein = document.getElementsByName("verein")[0].value;
