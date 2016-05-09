@@ -6,32 +6,59 @@
 <title> Add Players</title>
 </head>
 <body>
+<a class=logo href="http://windows.microsoft.com/de-de/internet-explorer/download-ie"><img class=logo src='../Milestone1_final/img/icon_1.png'/></a>
+<a href="index.html">Home</a> 
+&nbsp&nbsp
+<a href="players.html">Players</a>
 
-<a href="home.html"> Home </a>
-<a href="players.html"> Players </a>
-
-<h2>
+<h2 class=addplayer-head>
 Bitte geben Sie hier die Daten zu Ihrem neu angelegten Spieler an
 </h2>
 
-<form class=formAddPlayer>
-<input value=Vorname name=vorname type=text></input> </br>
-<input value=Nachname name=nachname type=text></input> </br>
-<input value=Verein name=verein type=text></input> </br>
-<input value=Headcoach name=hcoach type=text></input> </br>
-<input value="Assistant Coach" name=acoach type=text></input> </br>
-<input name=aktiv type=checkbox>Aktiv</input> </br>
-<select name=position>
+<div class=form-style>
+<form id="addPlayer" action="http://martinakraus.net/createPlayer.php" method="get">
+
+<h1>Spieler hinzuf&uumlgen</h1>
+
+<div class=section> <span>1</span> Personalinformation
+</div>
+
+<div class=inner-wrap>
+<label>Vorname<input name=vorname type=text required></input></label> 
+
+<label>Nachname<input name=nachname type=text required></input></label> 
+
+<label>Geburtsjahr<input name=jahr type=number required></input></label> 
+</div>
+
+<div class=section> <span>2</span> Vereinsinformation
+</div>
+
+<div class=inner-wrap>
+<label>Verein<input name=verein type=text required></input></label>
+<label>Headcoach<input name=hcoach type=text required></input></label>
+<label>Assistant Coach<input name=acoach type=text required></input> </label>
+</div>
+
+<div class=section> <span>3</span>Spielerinformation
+</div>
+
+<div class=inner-wrap>
+<label>Position<select name=position>
 	<option value=Center>Center</option>
 	<option value=Guard>Guard</option>
 	<option value="Power Forward">Power Forward</option>
 	<option value=Wing>Wing</option>
 	<option value="Small Forward">Small Forward</option>
-</select> </br>
-R&uumlckennummer </br>
-<input value=00 name=rückennummer type=number></input> </br>
-Geburtsjahr </br>
-<input value=1990 name=jahr type=number></input>  </br>
-<input name=favorit type=checkbox>Favorit</input> </br>
+</select></label>
+<label>R&uumlckennummer<input name=rückennummer type=number required></input></label> 
+<label>Favorit<input name=favorit type=checkbox></input></label> 
+<label>Aktiv<input name=aktiv type=checkbox></input></label> 
+</div>
+
 <input type=submit></input>
+
+</form>
+</div>
+
 </body>
