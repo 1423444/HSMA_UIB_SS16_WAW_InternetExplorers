@@ -20,7 +20,7 @@ function isText(eingabe) {
 		eingabe = eingabe.toLowerCase();
 		for(var i = 0; i < laengeEingabe; i++) {
 			var zeichen = eingabe.charCodeAt(i);
-			if(!(zeichen >= 97 && zeichen <= 122)) {
+			if(!((zeichen >= 97 && zeichen <= 122) || zeichen == 32)) {
 				rueckgabewert = false;
 			}
 		}

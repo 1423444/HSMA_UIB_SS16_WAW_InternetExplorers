@@ -22,5 +22,8 @@ function sendForm() {
 			}
 		};
 		xhr.send(addplayerform);
+		return true;
+	} else {
+		return false;
 	}
 }
