@@ -58,13 +58,13 @@ function changer(type){
 	if(type == 'all'){
 		ladeTabelle('');
 		document.getElementById('all').style.backgroundColor = '#3e8e41';
-		document.getElementById('favorites').style.backgroundColor = '#dc143c';
+		document.getElementById('favorites').style.backgroundColor = '#445878';
 	}
 	
 	if (type == 'favorites'){
 		ladeTabelle('?favorites=true');
 		document.getElementById('favorites').style.backgroundColor = '#3e8e41';
-		document.getElementById('all').style.backgroundColor = '#dc143c';
+		document.getElementById('all').style.backgroundColor = '#445878';
 	}
 }
 	
