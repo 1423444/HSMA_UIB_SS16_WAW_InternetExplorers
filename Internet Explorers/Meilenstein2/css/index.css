@@ -7,49 +7,29 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 07. Mai 2016
+ * Last updated: 16. April 2016
  */
 
 
-label {
-    float: left;
-    width: 640px;
-    padding-top: 3px;
-    text-align: right;
-    margin-right: 30px;
-}
 
-input {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
 
-select {
-    display: block;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-body {
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Arial';
-	font-size: 16px;
-	color: #ffe3bf;
-	background-color: #5d7cba;
-}
 
 /* Header */
+
+
+
+form input, select {
+	border-radius: 5px; 
+	
+}
 
 header {
 	width: 100%;
 	padding: 128px 0px;
-	background-color: #003eba;
-	background-image: url('../img/background.png');
+	background-color: #EEEFF7;
+
 	background-position: 0px 0px;
-	background-blend-mode: multiply;
-	background-repeat: repeat repeat;
+
 }
 
 header > div {
@@ -58,21 +38,16 @@ header > div {
 	padding: 64px;
 	width: 100%;
 	max-width: 640px;
-	color: #ffe3bf;
-	background-color: #5d7cba;
+	background-color: #445878;
 	border-radius: 12px;
 	text-align: center;
 }
 
-header > div > p:after {
-	content: " ";
-	display: table;
-	clear: both;
-}
+
 
 header h1 {
 	display: block;
-	color: #ffc77f;
+	color: #FCFFF5;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Arial';
@@ -98,13 +73,24 @@ header a:focus {
 
 /* Main */
 
+#addplayer{
+	display: block;
+	margin: 200px auto;
+	padding: 30px;
+	width: 100%;
+	max-width: 400px;
+	background-color: #EEEFF7;
+	border-radius: 60px;
+	text-align: center;
+}
+
 main section {
 	padding: 16px 0px;
 	text-align: center;
 }
 
 main h2 {
-	color: #ffc77f;
+	color: #445878;
 	font-family: 'Arial';
 }
 
@@ -112,82 +98,25 @@ main section:nth-of-type(1) {
 	padding: 15% 0px;
 }
 
-main section article {
-	display: inline-block;
-	width: 320px;
-	height: 420px;
-	margin: 16px;
-	padding: 16px;
-	vertical-align: top;
-	border-radius: 8px;
+input {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
-main section article figure {
-	display: block;
-	width: 144px;
-	height: 144px;
-	margin: 16px auto;
-	text-align: center;
+select {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
-main section article figure div {
-	display: inline-block;
-	width: 112px;
-	height: 112px;
-	line-height: 112px;
-	font-size: 48px;
-	background: #ffe51f;
-	border-radius: 128px;
-}
-
-main section article:hover figure div {
-	width: 96px;
-	height: 96px;
-	line-height: 96px;
-	font-size: 64px;
-}
-
-main section article h3 {
-	margin: 32px 0px;
-	font-size: 32px;
-	text-align: center;
-}
-
-main section article p {
-	font-size: 20px;
-	text-align: justify;
-}
-
-main section article a {
-	color: #ffe3bf;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-main section article a:hover,
-main section article a:focus {
-	color: #ffc77f;
-}
-
-
-main section article.social {
-	width: auto;
-	height: auto;
-}
-
-
-main section article.social a {
-	display: inline-block;
-	margin: 16px;
-	width: 64px;
-	height: 64px;
-	border-radius: 32px;
-	vertical-align: top;
-}
-
-main section article.social a:hover,
-main section article.social a:focus {
-	background: #ffc77f;
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #445878;
+	background-color: #445878;
 }
 
 /* Footer */
@@ -195,11 +124,10 @@ main section article.social a:focus {
 footer {
 	width: 100%;
 	padding: 64px 0px;
-	background-color: #003eba;
-	background-image: url('../img/background.png');
+	background-color: #EEEFF7;
 	background-position: 0px 0px;
-	background-blend-mode: multiply;
-	background-repeat: repeat repeat;
+	text-align: center;
+	
 }
 
 footer a {

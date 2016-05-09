@@ -11,7 +11,7 @@
  */
 
 a {
-	color:#ffe3bf;
+	color:#445878;
 	text-decoration:Underline;
 }
 
@@ -22,13 +22,14 @@ a:focus {
 }
 
 body {
+	text-align:center;
 	font-family:Arial;
-	background-color:#5d7cba;
-	color:#ffe3bf;
+	background-color:#EEEFF7;
+	color:#445878;
 }
 
 h1 {
-	color:#ffc77f;
+	color:#445878;
 }
 
 

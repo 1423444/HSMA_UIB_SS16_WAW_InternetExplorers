@@ -1,4 +1,4 @@
-/*
+/*/*
  * style.css
  * 
  * This file is part of the Internet Explorers site.
@@ -7,11 +7,11 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 08.Mai 2016
+ * Last updated: 16. April 2016
  */
 
 a {
-	color:#ffe3bf;
+	color:#445878;
 	text-decoration:Underline;
 }
 
@@ -22,13 +22,14 @@ a:focus {
 }
 
 body {
+	text-align:center;
 	font-family:Arial;
-	background-color:#5d7cba;
-	color:#ffe3bf;
+	background-color:#EEEFF7;
+	color:#445878;
 }
 
 h1 {
-	color:#ffc77f;
+	color:#445878;
 }
 
 .button {
@@ -37,14 +38,13 @@ h1 {
   text-align: center;
   cursor: pointer;
   color: #fff;
-  background-color: #dc143c;
+  background-color: #445878;
   border: none;
   
  
 }
 
 .button:hover {
-  background-color: #ff0000; 		
+  background-color: #92CDCF; 		
  
 }
-
