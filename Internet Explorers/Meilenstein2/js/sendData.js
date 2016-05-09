@@ -17,9 +17,13 @@ function sendForm() {
 		xhr.responseType = 'text';
 		xhr.onload = function(e) {
 			if(this.status == 200) {
-				console.log(this.response);
+				alert(this.response);
 			}
 		};
 		xhr.send(addplayerform);
+		return true;
+		
+	} else{
+		return false;
 	}
 }
