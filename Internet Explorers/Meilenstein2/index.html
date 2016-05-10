@@ -8,7 +8,7 @@
   --   Lucas Kneis
   --   Tobias Juenemann
   -- 
-  -- Last updated: 30. April 2016
+  -- Last updated: 10. Mai 2016
   -->
 <html lang="de">
 <head>
@@ -37,23 +37,23 @@
 					<table border="0" cellpadding="0" cellspacing="0">
 						<tr>
 							<td valign="top">Vorname:</td>
-							<td><input type="text" name="vorname" required></td>
+							<td><input type="text" name="vorname" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
 						</tr>
 						<tr>
 							<td valign="top">Nachname:</td>
-							<td><input type="text" name="name" required></td>
+							<td><input type="text" name="name" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
 						</tr>
 						<tr>
 							<td valign="top">Verein:</td>
-							<td><input type="text" name="verein" required></td>
+							<td><input type="text" name="verein" pattern="[a-zA-ZäüöÄÜÖ]+"  required></td>
 						</tr>
 						<tr>
 							<td valign="top">Headcoach:</td>
-							<td><input type="text" name="hcoach" required></td>
+							<td><input type="text" name="hcoach" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
 						</tr>
 						<tr>
 							<td valign="top">Assistant Coach:</td>
-							<td><input type="text" name="acoach" required></td>
+							<td><input type="text" name="acoach" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
 						</tr>
 						<tr>
 							<td valign="top">Aktiv:</td>
@@ -85,7 +85,7 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td><button id="sendButton"  onclick="return sendForm();"> Spieler absenden</td>
+							<td><button id="sendButton" onclick="sendForm();"> Spieler absenden</td>
 						</tr>
 					</table>
 				</center>
