@@ -7,11 +7,8 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 16. April 2016
+ * Last updated: 10. Mai 2016
  */
-
-
-
 
 
 /* Header */
@@ -25,7 +22,7 @@ form input, select {
 
 header {
 	width: 100%;
-	padding: 128px 0px;
+	padding: 380px 0px;
 	background-color: #EEEFF7;
 
 	background-position: 0px 0px;
