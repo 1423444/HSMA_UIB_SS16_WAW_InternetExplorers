@@ -75,3 +75,19 @@ function inputCheck() {
 	
 	return true;
 }
+
+function sendForm() {
+	if(inputCheck() == true) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', 'http://139.59.134.26/api/players', true);
+		xhr.responseType = 'text';
+		xhr.onload = function(e) {
+			if(this.status == 200) {
+				alert(this.response);
+			}
+		};
+		xhr.send(addplayerform);
+		
+		}
+}
+
