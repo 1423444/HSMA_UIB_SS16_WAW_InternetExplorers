@@ -7,24 +7,24 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 8.Mai 2016
+ * Last updated: 10. Mai 2016
  */
 
 function isText(eingabe) {
+	var regex = /^[a-zA-ZäüöÄÜÖ]+$/;
 	
-	if(eingabe.length == 0) {
+	if(eingabe.length == 0) { 
 		return false;
 	} else {
-		for(var i = 0; i < eingabe.length; i++) {
-			var zeichen = eingabe.charCodeAt(i);
-			if(!(zeichen >= 65 && zeichen <= 122)) {
-				return false;
+		if(!eingabe.match(regex)) {
+			return false;
 			}
-		}
-	}
-	
-   return true;
+		}  
+		
+	return true;
 }
+	
+
 
 function checkRueckennummer(eingabe) {
 	
