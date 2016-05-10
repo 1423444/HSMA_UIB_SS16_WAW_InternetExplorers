@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 30. April 2016
+ * Last updated: 10. Mai 2016
  */
 
 function sendForm() {
@@ -21,9 +21,7 @@ function sendForm() {
 			}
 		};
 		xhr.send(addplayerform);
-		return true;
 		
-	} else{
-		return false;
-	}
+		}
 }
+
