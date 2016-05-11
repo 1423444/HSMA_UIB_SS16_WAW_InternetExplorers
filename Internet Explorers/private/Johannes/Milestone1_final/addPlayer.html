@@ -5,7 +5,14 @@
 <meta cotent="text/html; charset=UTF-8">
 <title> Add Players</title>
 </head>
+
+
 <body>
+
+<script>
+alert('Hallo');
+hello();
+</script>
 <a class=logo href="http://windows.microsoft.com/de-de/internet-explorer/download-ie"><img class=logo src='../Milestone1_final/img/icon_1.png'/></a>
 <a href="index.html">Home</a> 
 &nbsp&nbsp
@@ -56,9 +63,11 @@ Bitte geben Sie hier die Daten zu Ihrem neu angelegten Spieler an
 <label>Aktiv<input name=aktiv type=checkbox></input></label> 
 </div>
 
-<input type=submit></input>
+<input id="sendButton" type=submit onclick="checkAddPlayer"></input>
 
 </form>
 </div>
+<script type="text/javascript" src="js/checkForm.js"></script>
+<script type="text/javascript" src="sendData.js"></script>
 
 </body>

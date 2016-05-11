@@ -189,6 +189,7 @@ body .logo{
 }
 
 .form-style input[type="button"],
+.form-style button,
 .form-style input[type="submit"]{
     background: #0078d6;
     padding: 8px 20px 8px 20px;
