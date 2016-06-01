@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "574eb52d618b072bc8575ee3",
+    "name": "Bailey",
+    "vorname": "Ramirez",
+    "club": "OKLAHOMA",
+    "coach": "Dianne Navarro",
+    "position": "Wing",
+    "number": 6,
+    "year": 1992,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d12227514178d4599",
+    "name": "Fuentes",
+    "vorname": "Lynda",
+    "club": "OKLAHOMA",
+    "coach": "Carrie Stanley",
+    "position": "Power Forward",
+    "number": 6,
+    "year": 1981,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52d752a792905821e17",
+    "name": "Marsh",
+    "vorname": "Carole",
+    "club": "LAKERS",
+    "coach": "David Collier",
+    "position": "Center",
+    "number": 6,
+    "year": 1980,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52dfe783212821b9fb4",
+    "name": "Walsh",
+    "vorname": "Hunt",
+    "club": "KNICKS",
+    "coach": "Roman Stark",
+    "position": "Power Forward",
+    "number": 9,
+    "year": 1994,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d45d1c76829ae8358",
+    "name": "Washington",
+    "vorname": "Hays",
+    "club": "KNICKS",
+    "coach": "Lenore Fox",
+    "position": "Guard",
+    "number": 7,
+    "year": 1995,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52db804568942bc7a28",
+    "name": "Maynard",
+    "vorname": "Bryan",
+    "club": "SPURS",
+    "coach": "Dorthy Mcdonald",
+    "position": "Center",
+    "number": 8,
+    "year": 1994,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52df7cdf94f370d28e7",
+    "name": "Sargent",
+    "vorname": "Ernestine",
+    "club": "SPURS",
+    "coach": "Angela Guerrero",
+    "position": "Power Forward",
+    "number": 14,
+    "year": 1983,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52d6efc28987ea6444f",
+    "name": "Church",
+    "vorname": "Mcintyre",
+    "club": "SPURS",
+    "coach": "Sheryl Monroe",
+    "position": "Guard",
+    "number": 9,
+    "year": 1990,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d324ccb18da29995e",
+    "name": "Berry",
+    "vorname": "Dena",
+    "club": "OKLAHOMA",
+    "coach": "Solomon Lloyd",
+    "position": "Center",
+    "number": 12,
+    "year": 1989,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52df7dca2f0f3a232a2",
+    "name": "Ortiz",
+    "vorname": "Flossie",
+    "club": "KNICKS",
+    "coach": "Sharp Rush",
+    "position": "Power Forward",
+    "number": 13,
+    "year": 1992,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52db7eeba67e8fa9a42",
+    "name": "Gillespie",
+    "vorname": "Clemons",
+    "club": "LAKERS",
+    "coach": "Cooke Morrison",
+    "position": "Center",
+    "number": 12,
+    "year": 1987,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d7ea1282818e47620",
+    "name": "Rich",
+    "vorname": "Patty",
+    "club": "KNICKS",
+    "coach": "Porter Fitzgerald",
+    "position": "Wing",
+    "number": 10,
+    "year": 1980,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52d64d6c4ea250c56b2",
+    "name": "Bentley",
+    "vorname": "Meyer",
+    "club": "KNICKS",
+    "coach": "Marguerite Glass",
+    "position": "Wing",
+    "number": 13,
+    "year": 1984,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d12fa4226e2bd7f7f",
+    "name": "Mason",
+    "vorname": "Jolene",
+    "club": "KNICKS",
+    "coach": "Mcdowell Garrett",
+    "position": "Center",
+    "number": 11,
+    "year": 1998,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d1ad573e07b5975d4",
+    "name": "Gay",
+    "vorname": "Suzette",
+    "club": "LAKERS",
+    "coach": "Sandra Lopez",
+    "position": "Guard",
+    "number": 13,
+    "year": 1982,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d1044c2ad00e8bf68",
+    "name": "Bonner",
+    "vorname": "Dana",
+    "club": "OKLAHOMA",
+    "coach": "Singleton Malone",
+    "position": "Wing",
+    "number": 14,
+    "year": 1991,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52d8aaca0d4742ee04f",
+    "name": "Mccullough",
+    "vorname": "Burnett",
+    "club": "LAKERS",
+    "coach": "Randall Carlson",
+    "position": "Power Forward",
+    "number": 14,
+    "year": 1982,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d59e4ec1aac7ab26b",
+    "name": "Short",
+    "vorname": "Vilma",
+    "club": "CELTICS",
+    "coach": "Tamika Hall",
+    "position": "Wing",
+    "number": 12,
+    "year": 1980,
+    "favorit": false
+  },
+  {
+    "_id": "574eb52d7965f3d290cd3c9d",
+    "name": "Banks",
+    "vorname": "Turner",
+    "club": "SPURS",
+    "coach": "Pope Mayer",
+    "position": "Center",
+    "number": 13,
+    "year": 1995,
+    "favorit": true
+  },
+  {
+    "_id": "574eb52d8e970a00ec88887d",
+    "name": "Contreras",
+    "vorname": "Branch",
+    "club": "MIAMI",
+    "coach": "Duffy Flowers",
+    "position": "Guard",
+    "number": 11,
+    "year": 1991,
+    "favorit": false
+  }
+]
