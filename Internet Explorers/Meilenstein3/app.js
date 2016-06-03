@@ -52,18 +52,19 @@ server.get("/api/players", (req, res) => {
 server.post("/api/players", (req, res) => {
 	if(req.body) {
 		return res.json(200, { "message": "Spieler wurde erfolgreich gespeichert" });
+	} else {
+		res.json(404, { "message": "Empty body is not allowed." });
 	}
-
-	res.json(404, { "message": "Empty body is not allowed." });
 });
+
+server.delete("/api/players:id", (req, res) => {
+	var filtered = filter(players, function(o) {
+		return !o.id === req.params.id;
+	});
+	players = filtered;
+});
+
 /*
-//id muss noch eingefuegt werden
-server.delete("/api/players/:id", (req, res) => {
-	var filtered = players.filter(function (i,n){
-         n.id === '';
-    }
-});
-
 //id muss noch eingefuegt werden
 server.put("/api/players/:id", (req, res) => {
 	if(req.body) {
@@ -71,6 +72,7 @@ server.put("/api/players/:id", (req, res) => {
 	} 
 });
 */
+
 server.listen(process.argv[2], () => {
  console.log(`${server.name} is listening at ${server.url}`);
 });
