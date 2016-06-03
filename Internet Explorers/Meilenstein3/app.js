@@ -65,14 +65,10 @@ server.del("/api/players/:id", (req, res) => {
 	res.end();
 });
 
-/*
-//id muss noch eingefuegt werden
 server.put("/api/players/:id", (req, res) => {
-	if(req.body) {
-		return res.json(200, { "message": "Spieler mit der ID ???? wurde erfolgreich geupdatet" });
-	} 
+	var messagetext = "Spieler mit der ID " + req.params.id + " wurde erfolgreich geupdatet";
+	return res.json(200, { "message": messagetext });
 });
-*/
 
 server.listen(process.argv[2], () => {
  console.log(`${server.name} is listening at ${server.url}`);
