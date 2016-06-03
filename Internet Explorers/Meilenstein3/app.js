@@ -48,6 +48,28 @@ server.post('/api/players', (req, res) => {
 	res.json(404, { "message": "Empty body is not allowed." });
 });
 
+// Buchstabe muss noch eingefuegt werden.
+server.get('/api/players?search=', (req, res) => {
+	var filtered = players.filter(function (i,n){
+         n.name.charAt(0) === '';
+    }
+	res.json(200, filtered);
+});
+
+//id muss noch eingefuegt werden
+server.delete('/api/players/:id, (req, res) => {
+	var filtered = players.filter(function (i,n){
+         n.id === '';
+    }
+});
+
+//id muss noch eingefuegt werden
+server.put('/api/players/:id, (req, res) => {
+	if(req.body) {
+		return res.json(200, { "message": "Spieler mit der ID ???? wurde erfolgreich geupdatet" });
+	} 
+});
+
 server.listen(process.argv[2], () => {
  console.log(`${server.name} is listening at ${server.url}`);
 });

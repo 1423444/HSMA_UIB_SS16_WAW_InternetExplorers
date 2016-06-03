@@ -1,6 +1,6 @@
 [
   {
-    "_id": "574eb52d618b072bc8575ee3",
+    "id": "574eb52d618b072bc8575ee3",
     "name": "Bailey",
     "vorname": "Ramirez",
     "club": "OKLAHOMA",
@@ -11,7 +11,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d12227514178d4599",
+    "id": "574eb52d12227514178d4599",
     "name": "Fuentes",
     "vorname": "Lynda",
     "club": "OKLAHOMA",
@@ -22,7 +22,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52d752a792905821e17",
+    "id": "574eb52d752a792905821e17",
     "name": "Marsh",
     "vorname": "Carole",
     "club": "LAKERS",
@@ -33,7 +33,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52dfe783212821b9fb4",
+    "id": "574eb52dfe783212821b9fb4",
     "name": "Walsh",
     "vorname": "Hunt",
     "club": "KNICKS",
@@ -44,7 +44,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d45d1c76829ae8358",
+    "id": "574eb52d45d1c76829ae8358",
     "name": "Washington",
     "vorname": "Hays",
     "club": "KNICKS",
@@ -55,7 +55,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52db804568942bc7a28",
+    "id": "574eb52db804568942bc7a28",
     "name": "Maynard",
     "vorname": "Bryan",
     "club": "SPURS",
@@ -66,7 +66,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52df7cdf94f370d28e7",
+    "id": "574eb52df7cdf94f370d28e7",
     "name": "Sargent",
     "vorname": "Ernestine",
     "club": "SPURS",
@@ -77,7 +77,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52d6efc28987ea6444f",
+    "id": "574eb52d6efc28987ea6444f",
     "name": "Church",
     "vorname": "Mcintyre",
     "club": "SPURS",
@@ -88,7 +88,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d324ccb18da29995e",
+    "id": "574eb52d324ccb18da29995e",
     "name": "Berry",
     "vorname": "Dena",
     "club": "OKLAHOMA",
@@ -99,7 +99,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52df7dca2f0f3a232a2",
+    "id": "574eb52df7dca2f0f3a232a2",
     "name": "Ortiz",
     "vorname": "Flossie",
     "club": "KNICKS",
@@ -110,7 +110,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52db7eeba67e8fa9a42",
+    "id": "574eb52db7eeba67e8fa9a42",
     "name": "Gillespie",
     "vorname": "Clemons",
     "club": "LAKERS",
@@ -121,7 +121,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d7ea1282818e47620",
+    "id": "574eb52d7ea1282818e47620",
     "name": "Rich",
     "vorname": "Patty",
     "club": "KNICKS",
@@ -132,7 +132,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52d64d6c4ea250c56b2",
+    "id": "574eb52d64d6c4ea250c56b2",
     "name": "Bentley",
     "vorname": "Meyer",
     "club": "KNICKS",
@@ -143,7 +143,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d12fa4226e2bd7f7f",
+    "id": "574eb52d12fa4226e2bd7f7f",
     "name": "Mason",
     "vorname": "Jolene",
     "club": "KNICKS",
@@ -154,7 +154,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d1ad573e07b5975d4",
+    "id": "574eb52d1ad573e07b5975d4",
     "name": "Gay",
     "vorname": "Suzette",
     "club": "LAKERS",
@@ -165,7 +165,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d1044c2ad00e8bf68",
+    "id": "574eb52d1044c2ad00e8bf68",
     "name": "Bonner",
     "vorname": "Dana",
     "club": "OKLAHOMA",
@@ -176,7 +176,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52d8aaca0d4742ee04f",
+    "id": "574eb52d8aaca0d4742ee04f",
     "name": "Mccullough",
     "vorname": "Burnett",
     "club": "LAKERS",
@@ -187,7 +187,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d59e4ec1aac7ab26b",
+    "id": "574eb52d59e4ec1aac7ab26b",
     "name": "Short",
     "vorname": "Vilma",
     "club": "CELTICS",
@@ -198,7 +198,7 @@
     "favorit": false
   },
   {
-    "_id": "574eb52d7965f3d290cd3c9d",
+    "id": "574eb52d7965f3d290cd3c9d",
     "name": "Banks",
     "vorname": "Turner",
     "club": "SPURS",
@@ -209,7 +209,7 @@
     "favorit": true
   },
   {
-    "_id": "574eb52d8e970a00ec88887d",
+    "id": "574eb52d8e970a00ec88887d",
     "name": "Contreras",
     "vorname": "Branch",
     "club": "MIAMI",
