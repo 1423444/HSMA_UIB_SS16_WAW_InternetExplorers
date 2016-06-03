@@ -7,69 +7,70 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 02. June 2016
+ * Last updated: 03. June 2016
  */
  
-'use strict';
+"use strict";
 
-var players = require('./JSON/players.json');
+var players = require("./JSON/players.json");
 
-var restify = require('restify');
+var restify = require("restify");
 
 var server = restify.createServer({
-	name: 'InternetExplorers'
+	name: "InternetExplorers"
 });
 
-var underscore = require("underscore");
-var where = require("lodash.where");
+var filter = require("lodash.filter");
 
 server.use(restify.bodyParser());
 server.use(restify.CORS());
 server.use(restify.queryParser());
 
-server.get('/api/players', (req, res) => {
-	var query = req.params.favorites || 'false';
-
-	if(query === 'true'){
-		var filtered = where(players, {favorit: true});
+server.get("/api/players", (req, res) => {
+	var query = req.params.favorites || "false";
+	var search = (typeof req.params.search !== "undefined") || false;
+	
+	if(search === true) {
+		if(req.params.search.length === 1) {
+			var filtered = filter(players, function(o) {
+				return o.name.charAt(0) === req.params.search;
+			});
+			res.json(200, filtered);
+		} else {
+			res.json(404, { "message": "FAIL: No correct value in search!" });
+		}
+	} else if(query === "true"){
+		var filtered = filter(players, {favorit: true});
 		res.json(200, filtered);
-	} else if(query === 'false'){
+	} else if(query === "false"){
 		res.json(200, players);
 	} else {
 		res.json(404, { "message": "FAIL" });
-	}
+	}	
 });
 
-server.post('/api/players', (req, res) => {
+server.post("/api/players", (req, res) => {
 	if(req.body) {
 		return res.json(200, { "message": "Spieler wurde erfolgreich gespeichert" });
 	}
 
 	res.json(404, { "message": "Empty body is not allowed." });
 });
-
-// Buchstabe muss noch eingefuegt werden.
-server.get('/api/players?search=', (req, res) => {
-	var filtered = players.filter(function (i,n){
-         n.name.charAt(0) === '';
-    }
-	res.json(200, filtered);
-});
-
+/*
 //id muss noch eingefuegt werden
-server.delete('/api/players/:id, (req, res) => {
+server.delete("/api/players/:id", (req, res) => {
 	var filtered = players.filter(function (i,n){
          n.id === '';
     }
 });
 
 //id muss noch eingefuegt werden
-server.put('/api/players/:id, (req, res) => {
+server.put("/api/players/:id", (req, res) => {
 	if(req.body) {
 		return res.json(200, { "message": "Spieler mit der ID ???? wurde erfolgreich geupdatet" });
 	} 
 });
-
+*/
 server.listen(process.argv[2], () => {
  console.log(`${server.name} is listening at ${server.url}`);
 });

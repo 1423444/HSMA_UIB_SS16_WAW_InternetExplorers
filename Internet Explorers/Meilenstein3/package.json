@@ -1,6 +1,6 @@
 {
   "name": "meilenstein3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -10,8 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "lodash.where": "^3.1.0",
-    "restify": "^4.1.0",
-    "underscore": "^1.8.3"
+    "lodash.filter": "^4.4.0",
+    "restify": "^4.1.0"
   }
 }
