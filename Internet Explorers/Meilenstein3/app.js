@@ -12,21 +12,21 @@
  
 "use strict";
 
-var players = require("./JSON/players.json");
+const players = require("./JSON/players.json");
 
-var restify = require("restify");
+const restify = require("restify");
 
-var server = restify.createServer({
+const server = restify.createServer({
 	name: "InternetExplorers"
 });
 
-var filter = require("lodash.filter");
+const filter = require("lodash.filter");
 
 server.use(restify.bodyParser());
 server.use(restify.CORS());
 server.use(restify.queryParser());
 
-server.get("/api/players", (req, res) => {
+server.get('/api/players', (req, res) => {
 	var query = req.params.favorites || "false";
 	var search = (typeof req.params.search !== "undefined") || false;
 	
@@ -49,7 +49,7 @@ server.get("/api/players", (req, res) => {
 	}	
 });
 
-server.post("/api/players", (req, res) => {
+server.post('/api/players', (req, res) => {
 	if(req.body) {
 		return res.json(200, { "message": "Spieler wurde erfolgreich gespeichert" });
 	} else {
@@ -57,7 +57,7 @@ server.post("/api/players", (req, res) => {
 	}
 });
 
-server.del("/api/players/:id", (req, res) => {
+server.del('/api/players/:id', (req, res) => {
 	var filtered = filter(players, function(o) {
 		return !(o.id === req.params.id);
 	});
@@ -65,7 +65,7 @@ server.del("/api/players/:id", (req, res) => {
 	res.end();
 });
 
-server.put("/api/players/:id", (req, res) => {
+server.put('/api/players/:id', (req, res) => {
 	var messagetext = "Spieler mit der ID " + req.params.id + " wurde erfolgreich geupdatet";
 	return res.json(200, { "message": messagetext });
 });
