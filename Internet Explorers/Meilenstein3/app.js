@@ -57,11 +57,12 @@ server.post("/api/players", (req, res) => {
 	}
 });
 
-server.delete("/api/players:id", (req, res) => {
+server.del("/api/players/:id", (req, res) => {
 	var filtered = filter(players, function(o) {
-		return !o.id === req.params.id;
+		return !(o.id === req.params.id);
 	});
 	players = filtered;
+	res.end();
 });
 
 /*
