@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<!--
+  -- index.html
+  -- 
+  -- This file is part of the Internet Explorers site.
+  -- Written by
+  --   Johannes Heiler
+  --   Lucas Kneis
+  --   Tobias Juenemann
+  -- 
+  -- Last updated: 10. Mai 2016
+  -->
+<html lang="de">
+<head>
+	<title>Internet Explorers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/checkForm.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>Internet Explorers</h1>
+			<p> 
+				<a href="home.html">home</a>&nbsp;&nbsp;&nbsp;
+				<a href="#addplayer">add player</a>&nbsp;&nbsp;&nbsp;
+				<a href="players.html">players</a> 
+			</p>
+		</div>
+	</header>
+	<main>
+		<section id="addplayer">
+			<h2>Add player</h2>
+			<form name="addplayerform">
+				<center>
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td valign="top">Vorname:</td>
+							<td><input type="text" name="vorname" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Nachname:</td>
+							<td><input type="text" name="name" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Verein:</td>
+							<td><input type="text" name="verein" pattern="[a-zA-ZäüöÄÜÖ]+"  required></td>
+						</tr>
+						<tr>
+							<td valign="top">Headcoach:</td>
+							<td><input type="text" name="hcoach" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Assistant Coach:</td>
+							<td><input type="text" name="acoach" pattern="[a-zA-ZäüöÄÜÖ]+" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Aktiv:</td>
+							<td><input type="checkbox" name="aktiv"></td>
+						</tr>
+						<tr>
+							<td valign="top">Position:</td>
+							<td>
+								<select name="position" size="1" required> 
+									<option value="center">Center</option >
+									<option value="guard">Guard</option>
+									<option value="power forward">Power Forwards</option>
+									<option value="wing" selected="selected">Wing</option>
+									<option value="small forward">Small Forward</option> 
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">Geburtsjahr:</td>
+							<td><input type="number" min="0" max="2016" step="1" name="jahr" required></td>
+						</tr>
+						<tr>
+							<td valign="top">R&uuml;ckennummer:</td>
+							<td><input type="number" min="4" max="15" step="1" name="number" required></td>
+						</tr>
+						<tr>
+							<td valign="top">Favorit markieren:</td>
+							<td><input type="checkbox" name="favorit"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button id="sendButton" onclick="sendForm();"> Spieler absenden</td>
+						</tr>
+					</table>
+				</center>
+			</form>
+		</section>
+	</main>
+	<footer id="footer">
+			<img src="img/logo.png"></a>
+	</footer>
+</body>
+</html>
