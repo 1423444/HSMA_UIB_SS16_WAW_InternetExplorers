@@ -12,7 +12,7 @@
 
 function ladeTabelle(param) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'http://localhost/api/players' + param);
+	xhr.open('GET', 'http://localhost:100/api/players' + param);
 	xhr.responseType = 'json';
 	xhr.onload = function(e) {
 		var data = xhr.response;
