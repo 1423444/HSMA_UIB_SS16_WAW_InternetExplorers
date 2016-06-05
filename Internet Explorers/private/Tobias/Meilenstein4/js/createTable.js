@@ -7,12 +7,12 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 10. Mai 2016
+ * Last updated: 05. June 2016
  */
 
 function ladeTabelle(param) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'http://localhost:100/api/players' + param);
+	xhr.open('GET', 'http://localhost:80/api/players' + param);
 	xhr.responseType = 'json';
 	xhr.onload = function(e) {
 		var data = xhr.response;

@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 10. Mai 2016
+ * Last updated: 05. June 2016
  */
 
 function isText(eingabe) {
@@ -79,7 +79,7 @@ function inputCheck() {
 function sendForm() {
 	if(inputCheck() == true) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'http://localhost:100/api/players', true);
+		xhr.open('POST', 'http://localhost:80/api/players', true);
 		xhr.responseType = 'text';
 		xhr.onload = function(e) {
 			if(this.status == 200) {
