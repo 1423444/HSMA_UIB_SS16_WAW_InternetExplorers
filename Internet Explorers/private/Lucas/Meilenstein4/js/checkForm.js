@@ -79,7 +79,7 @@ function inputCheck() {
 function sendForm() {
 	if(inputCheck() == true) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', 'http://localhost/api/players', true);
+		xhr.open('POST', 'http://localhost:100/api/players', true);
 		xhr.responseType = 'text';
 		xhr.onload = function(e) {
 			if(this.status == 200) {
