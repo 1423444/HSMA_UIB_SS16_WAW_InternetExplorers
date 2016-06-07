@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 05. June 2016
+ * Last updated: 07. June 2016
  */
 
 var hostname = 'localhost'; 
@@ -16,20 +16,26 @@ var port = 80;
 var players = require('./JSON/players.json');
 
 var express = require('express'); 
-var app = express(); 
+var app = express();
 
 var cors = require('express-cors') 
 var bodyParser = require('body-parser'); 
 var _ = require('underscore');
 
 app.use(bodyParser.json()); 
-app.use(cors()); 
+app.use(cors());
 
+var server = app.listen(port, hostname, function () { 
+	console.log(`Listening to http//:${hostname}:${port}/`); 
+ });
+
+// Statische Dateien ausliefern
 app.use('/', express.static(__dirname));
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/js',express.static(__dirname + '/js')); 
 app.use('/img', express.static(__dirname + '/img'));
 
+// Dynamisch erzeugte Infos
 app.get('/api/players', (req, res) => {
 	var query = req.query.favorites || 'false';
 	var search = req.query.search || 'false';
@@ -73,7 +79,12 @@ app.put('/api/players/:id', (req, res) => {
 	var messagetext = 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet';
 	res.status(200).json({ 'message': messagetext });
 });
+ 
+// Chat
+var io = require('socket.io').listen(server);
 
-app.listen(port, hostname, function () { 
-	console.log(`Listening to http//:${hostname}:${port}/`); 
- }); 
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
+});
