@@ -1,0 +1,50 @@
+/*
+ * style.css
+ * 
+ * This file is part of the Internet Explorers site.
+ * Written by
+ *   Johannes Heiler
+ *   Lucas Kneis
+ *   Tobias Juenemann
+ * 
+ * Last updated: 07. June 2016
+ */
+
+a {
+	color:#445878;
+	text-decoration:Underline;
+}
+
+a:hover,
+a:focus {
+	color:#ffc77f;
+	text-decoration:None;
+}
+
+body {
+	text-align:center;
+	font-family:Arial;
+	background-color:#EEEFF7;
+	color:#445878;
+}
+
+h1 {
+	color:#445878;
+}
+
+.button {
+  padding: 5px 150px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #445878;
+  border: none;
+  
+ 
+}
+
+.button:hover {
+  background-color: #92CDCF; 		
+ 
+}

@@ -1,0 +1,56 @@
+/*
+ * chat.css
+ * 
+ * This file is part of the Internet Explorers site.
+ * Written by
+ *   Johannes Heiler
+ *   Lucas Kneis
+ *   Tobias Juenemann
+ * 
+ * Last updated: 07. June 2016
+ */
+
+*{
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+  
+body { 
+	font: 13px Arial; 
+}
+
+form { 
+	background: blue; 
+	padding: 3px; 
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+}
+
+form input { 
+	border: 0; 
+	padding: 10px; 
+	width: 90%; 
+	margin-right: .5%; 
+}
+
+form button { 
+	width: 9%; 
+	background: #8686ff;
+	color:#ffc77f;	
+	border: none; 
+	padding: 10px; 
+}
+     
+#messages { 
+	list-style-type: none; margin: 0; padding: 0; 
+}
+
+#messages li { 
+	padding: 5px 10px; 
+}
+
+#messages li:nth-child(odd) { 
+	background: #EEEFF7; 
+}

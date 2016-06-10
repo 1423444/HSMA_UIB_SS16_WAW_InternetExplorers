@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+  -- chat.html
+  -- 
+  -- This file is part of the Internet Explorers site.
+  -- Written by
+  --   Johannes Heiler
+  --   Lucas Kneis
+  --   Tobias Juenemann
+  -- 
+  -- Last updated: 07. June 2016
+  -->
+<html>
+  <head>
+    <title>Chat</title>
+	<link rel="stylesheet" href="css/chat.css">
+	<script type="text/javascript" src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  </head>
+  <body>
+    <!-- 
+	  -- Der Chat wurde nach folgendem Vorbild realisiert:
+	  -- http://socket.io/get-started/chat/
+	-->
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="inputMessage" autocomplete="off" /><button>Senden</button>
+    </form>
+	<script type="text/javascript" src="js/chat.js"></script>
+  </body>
+</html>
