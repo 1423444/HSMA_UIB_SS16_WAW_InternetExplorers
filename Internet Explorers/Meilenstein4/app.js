@@ -16,7 +16,7 @@ var port = 80;
 var players = require('./JSON/players.json');
 
 const express = require('express'); 
-var app = express();
+const app = express();
 
 const cors = require('express-cors') 
 const bodyParser = require('body-parser'); 
@@ -37,8 +37,8 @@ app.use('/img', express.static(__dirname + '/img'));
 
 // Dynamisch erzeugte Infos
 app.get('/api/players', (req, res) => {
-	var query = req.query.favorites || 'false';
-	var search = req.query.search || 'false';
+	let query = req.query.favorites || 'false';
+	let search = req.query.search || 'false';
 	
 	if(search !== 'false') {
 		if(search.length === 1) {
@@ -81,7 +81,7 @@ app.put('/api/players/:id', (req, res) => {
 });
  
 // Chat
-var io = require('socket.io').listen(server);
+const io = require('socket.io').listen(server);
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
