@@ -7,7 +7,7 @@
  *   Lucas Kneis
  *   Tobias Juenemann
  * 
- * Last updated: 05. June 2016
+ * Last updated: 11. June 2016
  */
 
 var hostname = 'localhost'; 
@@ -63,8 +63,20 @@ app.delete('/api/players/:id', (req, res) => {
 });
 
 app.put('/api/players/:id', (req, res) => {
-	var messagetext = 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet';
-	res.status(200).json({ 'message': messagetext });
+	var find = false;
+	_.filter(players, function(o) {
+		if(o.id === req.params.id) {
+			find = true;
+			return true;
+		}
+		else return false;
+	});
+	if(find) {
+		var messagetext = 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet';
+		res.status(200).json({ 'message': messagetext });
+	} else {
+		res.status(404).json({ 'message': 'FAIL' });
+	}
 });
 
 app.listen(port, hostname, function () { 
