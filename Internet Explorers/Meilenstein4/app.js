@@ -37,17 +37,18 @@ app.use('/img', express.static(__dirname + '/img'));
 
 // Dynamisch erzeugte Infos
 app.get('/api/players', (req, res) => {
-	let query = req.query.favorites || 'false';
-	let search = req.query.search || 'false';
+	var query = req.query.favorites || 'false';
+	var search = req.query.search || 'false';
+	var regex = /^[A-Z]+$/;
 	
 	if(search !== 'false') {
-		if(search.length === 1) {
+		if(search.length === 1 && search.match(regex)) {
 			var filtered = _.filter(players, function(o) {
 				return o.name.charAt(0) === search;
 			});
 			res.status(200).json(filtered);
 		} else {
-			res.status(404).json({ 'message': 'FAIL: No correct value in search!' });
+			res.status(404).json({ 'message': 'Es wurde kein Spieler gefunden!' });
 		}
 	} else if(query === 'true'){
 		var filtered = _.filter(players, {favorit: true});
@@ -55,7 +56,7 @@ app.get('/api/players', (req, res) => {
 	} else if(query === 'false'){
 		res.status(200).json(players);
 	} else {
-		res.status(404).json({ 'message': 'FAIL' });
+		res.status(404).json({ 'message': 'Es ist ein Fehler aufgetreten' });
 	}
 });
 
@@ -63,7 +64,7 @@ app.post('/api/players', (req, res) => {
 	if(req.body) {
 		res.status(200).json({ 'message': 'Spieler wurde erfolgreich gespeichert' }); 
 	} else {
-		res.status(404).json({ 'message': 'Empty body is not allowed.' }); 
+		res.status(404).json({ 'message': 'Leerer Body ist nicht erlaubt' }); 
 	}
 });
 
@@ -88,7 +89,7 @@ app.put('/api/players/:id', (req, res) => {
 		var messagetext = 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet';
 		res.status(200).json({ 'message': messagetext });
 	} else {
-		res.status(404).json({ 'message': 'FAIL' });
+		res.status(404).json({ 'message': 'Spieler mit dieser ID existiert nicht' });
 	}
 });
  
