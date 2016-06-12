@@ -9,31 +9,36 @@
 <div id="basketball"></div>
 <h1><%= title %></h1>
 <p> View all Players of our Database or see your favourites</p>
-</body>
+
 <p>
+    <input id="searchChar"type="text" maxlength="1" minlength="1" pattern="[A-Za-z]{1}">
+    <button id="searchCharButton" type="button" onclick="changer('search');">Search player by Lastname</button>
+    </input>
+
+    <button id="all" onclick="changer('all');" class="button">All</button>
+    <button id ="favorites" onclick="changer('favorites');" class="button">Favoriten</button>
+</p>
+
+<p>
+
 <table align="center" border="1" width="20%" id="players">
-    <tr>
-        <td colspan="3" style="text-align: center;"><button id="all" onclick="changer('all');" class="button">All</button></td>
-        <td colspan="3" style="text-align: center;"><button id ="favorites" onclick="changer('favorites');" class="button">Favoriten</button></td>
-    </tr>
-    <tr>
-        <td>Name</td>
-        <td>Verein</td>
-        <td>Coach</td>
-        <td>Position</td>
-        <td>Nummer</td>
-        <td>Jahr</td>
-    </tr>
+        <th>Delete</th>
+        <th>Name</th>
+        <th>Verein</th>
+        <th>Coach</th>
+        <th>Position</th>
+        <th>Nummer</th>
+        <th>Jahr</th>
+
 </table>
-<br>
-
-<input id="searchChar"type="text" maxlength="1" minlength="1" pattern="[A-Za-z]{1}">
-<button type="button" onclick="changer('search', );">Search player by Lastname</button>
-</input>
-
-</br>
-</br>
-<a href="/">Zur&uuml;ck</a>
 
 </p>
+
+
+
+<p>
+<a href="/">Zur&uuml;ck</a>
+</p>
+
+</body>
 </html>

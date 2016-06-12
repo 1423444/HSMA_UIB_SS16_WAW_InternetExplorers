@@ -52,6 +52,7 @@ h1{
   background-color: white;
   border-radius: 0.3vw;
   border: 0.1vw solid azure ;
+  background-size: 5px 3px;
 }
 
 button {

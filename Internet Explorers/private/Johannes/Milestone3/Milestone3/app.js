@@ -1,19 +1,19 @@
 //core behind object
 
-var express = require('express');
+const express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var _ = require('underscore');
+const bodyParser = require('body-parser');
+const _ = require('underscore');
 
 var routes = require('./routes/index');
 var playersPage = require('./routes/players');
 
 var playersJson = require('./data/players.json');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,25 +33,49 @@ app.use('/players', playersPage);
 
 app.get('/api/players',(req, res) => {
 
-  var query = req.query.favorites || 'false';
-  var search = req.query.search || 'false';
+  let query = req.query.favorites || 'false';
+  let search = req.query.search || 'false';
+  let regex = /^[A-Z]+$/;
 
-  if (search !== 'false') {
-    if (search.length === 1) {
-      var filtered = _.filter(playersJson, function (o) {
-        return o.name.charAt(0) === search;
-      });
+
+  if(search !== 'false') {
+    if(search.length === 1 && search.match(regex)) {
+      let filtered = playersJson.filter(o => o.name.charAt(0) === search);
       res.status(200).json(filtered);
     } else {
-      res.status(404).json({'message': 'Fail: No such Search API'});
+      res.status(404).json({ 'message': 'Ungültige Suchanfrage' });
     }
-  }else if (query === 'true'){
-    var filtered = _.filter(playersJson, {favorites:true});
+  } else if(query === 'true'){
+    let filtered = _.filter(playersJson, {favorites: true});
     res.status(200).json(filtered);
-  } else if (query === 'false'){
+  } else if(query === 'false'){
     res.status(200).json(playersJson);
-  } else{
-    res.status(404).json({'message': 'Fail: No such Get API'})
+  } else {
+    res.status(404).json({ 'message': 'Es ist ein Fehler aufgetreten' });
+  }
+});
+
+app.post('/api/players', (req, res) => {
+  if(req.body) {
+    res.status(200).json({ 'message': 'Spieler wurde erfolgreich gespeichert' });
+  } else {
+    res.status(404).json({ 'message': 'Leerer Body ist nicht erlaubt' });
+  }
+});
+
+app.delete('/api/players/:id', (req, res) => {
+  let filtered = playersJson.filter(o => o.id !== req.params.id);
+  playersJson = filtered;
+  res.end();
+});
+
+app.put('/api/players/:id', (req, res) => {
+  let filtered = playersJson.filter(o => o.id === req.params.id);
+  if (filtered.length === 1) {
+    res.status(200).json({ 'message': 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet' });
+  }
+  else {
+    res.status(404).json({ 'message': 'Spieler mit dieser ID existiert nicht' });
   }
 });
 
