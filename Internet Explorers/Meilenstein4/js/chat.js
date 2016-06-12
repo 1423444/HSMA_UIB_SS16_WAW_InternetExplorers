@@ -10,7 +10,7 @@
  * Last updated: 07. June 2016
  */
 
-var socket = io();
+const socket = io();
 
 do {
 	var name = prompt('Willkommen, bitte gebe deinen Usernamen ein: ', '');
@@ -18,12 +18,12 @@ do {
 
 alert('Willkommen ' + name);
 
-$('form').submit(function() {
+$('form').submit(() => {
 	socket.emit('chat message', name + ': ' + $('#inputMessage').val());
     $('#inputMessage').val('');
     return false;
 });
 
-socket.on('chat message', function(msg) {
+socket.on('chat message', (msg) => {
 	$('#messages').append($('<li>').text(msg));
 });

@@ -85,8 +85,9 @@ app.put('/api/players/:id', (req, res) => {
 
 // Chat
 const io = require('socket.io').listen(server);
-io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
+
+io.on('connection',(socket) => {
+  socket.on('chat message', msg => {
     io.emit('chat message', msg);
   });
 });
