@@ -22,6 +22,9 @@ const cors = require('express-cors')
 const bodyParser = require('body-parser'); 
 const _ = require('underscore');
 
+
+
+
 app.use(bodyParser.json()); 
 app.use(cors());
 
@@ -37,21 +40,19 @@ app.use('/img', express.static(__dirname + '/img'));
 
 // Dynamisch erzeugte Infos
 app.get('/api/players', (req, res) => {
-	var query = req.query.favorites || 'false';
-	var search = req.query.search || 'false';
-	var regex = /^[A-Z]+$/;
+	let query = req.query.favorites || 'false';
+	let search = req.query.search || 'false';
+	let regex = /^[A-Z]+$/;
 	
 	if(search !== 'false') {
 		if(search.length === 1 && search.match(regex)) {
-			var filtered = _.filter(players, function(o) {
-				return o.name.charAt(0) === search;
-			});
+			let filtered = players.filter(o => o.name.charAt(0) === search);
 			res.status(200).json(filtered);
 		} else {
-			res.status(404).json({ 'message': 'Es wurde kein Spieler gefunden!' });
+			res.status(404).json({ 'message': 'Ungültige Suchanfrage' });
 		}
 	} else if(query === 'true'){
-		var filtered = _.filter(players, {favorit: true});
+		let filtered = _.filter(players, {favorit: true});
 		res.status(200).json(filtered);
 	} else if(query === 'false'){
 		res.status(200).json(players);
@@ -69,33 +70,23 @@ app.post('/api/players', (req, res) => {
 });
 
 app.delete('/api/players/:id', (req, res) => {
-	var filtered = _.filter(players, function(o) {
-		return !(o.id === req.params.id);
-	});
+	let filtered = players.filter(o => o.id !== req.params.id)
 	players = filtered;
 	res.end();
 });
 
 app.put('/api/players/:id', (req, res) => {
-	var find = false;
-	_.filter(players, function(o) {
-		if(o.id === req.params.id) {
-			find = true;
-			return true;
+	let filtered = players.filter(o => o.id === req.params.id)
+		if (filtered.length === 1) {
+			res.status(200).json({ 'message': 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet' });
 		}
-		else return false;
-	});
-	if(find) {
-		var messagetext = 'Spieler mit der ID ' + req.params.id + ' wurde erfolgreich geupdatet';
-		res.status(200).json({ 'message': messagetext });
-	} else {
-		res.status(404).json({ 'message': 'Spieler mit dieser ID existiert nicht' });
-	}
+		else {
+			res.status(404).json({ 'message': 'Spieler mit dieser ID existiert nicht' });
+		}			
 });
- 
+
 // Chat
 const io = require('socket.io').listen(server);
-
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
