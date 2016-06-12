@@ -8,7 +8,7 @@
     "position": "Wing",
     "number": 6,
     "year": 1992,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d12227514178d4599",
@@ -19,7 +19,7 @@
     "position": "Power Forward",
     "number": 6,
     "year": 1981,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52d752a792905821e17",
@@ -30,7 +30,7 @@
     "position": "Center",
     "number": 6,
     "year": 1980,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52dfe783212821b9fb4",
@@ -41,7 +41,7 @@
     "position": "Power Forward",
     "number": 9,
     "year": 1994,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d45d1c76829ae8358",
@@ -52,7 +52,7 @@
     "position": "Guard",
     "number": 7,
     "year": 1995,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52db804568942bc7a28",
@@ -63,7 +63,7 @@
     "position": "Center",
     "number": 8,
     "year": 1994,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52df7cdf94f370d28e7",
@@ -74,7 +74,7 @@
     "position": "Power Forward",
     "number": 14,
     "year": 1983,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52d6efc28987ea6444f",
@@ -85,7 +85,7 @@
     "position": "Guard",
     "number": 9,
     "year": 1990,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d324ccb18da29995e",
@@ -96,7 +96,7 @@
     "position": "Center",
     "number": 12,
     "year": 1989,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52df7dca2f0f3a232a2",
@@ -107,7 +107,7 @@
     "position": "Power Forward",
     "number": 13,
     "year": 1992,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52db7eeba67e8fa9a42",
@@ -118,7 +118,7 @@
     "position": "Center",
     "number": 12,
     "year": 1987,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d7ea1282818e47620",
@@ -129,7 +129,7 @@
     "position": "Wing",
     "number": 10,
     "year": 1980,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52d64d6c4ea250c56b2",
@@ -140,7 +140,7 @@
     "position": "Wing",
     "number": 13,
     "year": 1984,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d12fa4226e2bd7f7f",
@@ -151,7 +151,7 @@
     "position": "Center",
     "number": 11,
     "year": 1998,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d1ad573e07b5975d4",
@@ -162,7 +162,7 @@
     "position": "Guard",
     "number": 13,
     "year": 1982,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d1044c2ad00e8bf68",
@@ -173,7 +173,7 @@
     "position": "Wing",
     "number": 14,
     "year": 1991,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52d8aaca0d4742ee04f",
@@ -184,7 +184,7 @@
     "position": "Power Forward",
     "number": 14,
     "year": 1982,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d59e4ec1aac7ab26b",
@@ -195,7 +195,7 @@
     "position": "Wing",
     "number": 12,
     "year": 1980,
-    "favorit": false
+    "favorites": false
   },
   {
     "id": "574eb52d7965f3d290cd3c9d",
@@ -206,7 +206,7 @@
     "position": "Center",
     "number": 13,
     "year": 1995,
-    "favorit": true
+    "favorites": true
   },
   {
     "id": "574eb52d8e970a00ec88887d",
@@ -217,6 +217,6 @@
     "position": "Guard",
     "number": 11,
     "year": 1991,
-    "favorit": false
+    "favorites": false
   }
 ]

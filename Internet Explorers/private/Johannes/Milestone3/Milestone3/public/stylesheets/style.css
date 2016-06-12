@@ -50,7 +50,8 @@ h1{
   color: #7f0000;
   padding-top: 0.3vw;
   background-color: white;
-
+  border-radius: 0.3vw;
+  border: 0.1vw solid azure ;
 }
 
 button {
@@ -63,6 +64,22 @@ button {
   border-radius: 0.3vw;
 }
 
+table, td, th {
+  border: 0.1vw solid aliceblue;
+  border-collapse: collapse;
+  padding: 0.4vw;
+}
+
 table {
+  width: 50%;
+}
+
+th {
+  font-weight: bolder;
+  text-align: center;
+}
+
+td{
+  text-align: left;
 
 }

@@ -6,6 +6,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var _ = require('underscore');
 
 var routes = require('./routes/index');
 var playersPage = require('./routes/players');
@@ -29,11 +30,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/players', playersPage);
 
-app.get('/api/players',(req, res) => {
-  var query = req.query.favourites || 'false';
-  var search = req.query.search || 'false';
-    if(search)
 
+app.get('/api/players',(req, res) => {
+
+  var query = req.query.favorites || 'false';
+  var search = req.query.search || 'false';
+
+  if (search !== 'false') {
+    if (search.length === 1) {
+      var filtered = _.filter(playersJson, function (o) {
+        return o.name.charAt(0) === search;
+      });
+      res.status(200).json(filtered);
+    } else {
+      res.status(404).json({'message': 'Fail: No such Search API'});
+    }
+  }else if (query === 'true'){
+    var filtered = _.filter(playersJson, {favorites:true});
+    res.status(200).json(filtered);
+  } else if (query === 'false'){
+    res.status(200).json(playersJson);
+  } else{
+    res.status(404).json({'message': 'Fail: No such Get API'})
+  }
 });
 
 
