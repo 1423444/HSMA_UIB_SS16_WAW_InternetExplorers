@@ -54,7 +54,7 @@ function ladeTabelle(param) {
 	xhr.send(null);
 }
 
-function changer(type){
+function changer(type, value){
 	if(type == 'all'){
 		ladeTabelle('');
 		document.getElementById('all').style.backgroundColor = '#7f0000';
@@ -65,6 +65,11 @@ function changer(type){
 		ladeTabelle('?favorites=true');
 		document.getElementById('favorites').style.backgroundColor = '#7f0000';
 		document.getElementById('all').style.backgroundColor = '#b43b08';
+	}
+
+	if(type == 'search'){
+		var char = 
+		ladeTabelle('?search=')
 	}
 }
 	
