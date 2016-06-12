@@ -34,9 +34,7 @@ var server = app.listen(port, hostname, function () {
 
 // Statische Dateien ausliefern
 app.use('/', express.static(__dirname));
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/js',express.static(__dirname + '/js')); 
-app.use('/img', express.static(__dirname + '/img'));
+
 
 // Dynamisch erzeugte Infos
 app.get('/api/players', (req, res) => {
