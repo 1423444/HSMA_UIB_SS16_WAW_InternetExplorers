@@ -28,7 +28,7 @@ const _ = require('underscore');
 app.use(bodyParser.json()); 
 app.use(cors());
 
-var server = app.listen(port, hostname, function () { 
+var server = app.listen(port, hostname, () => { 
 	console.log(`Listening to http//:${hostname}:${port}/`); 
  });
 

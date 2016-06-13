@@ -70,6 +70,6 @@ app.put('/api/players/:id', (req, res) => {
 		}			
 });
 
-app.listen(port, hostname, function () { 
+app.listen(port, hostname, () => { 
 	console.log(`Listening to http//:${hostname}:${port}/`); 
  }); 
