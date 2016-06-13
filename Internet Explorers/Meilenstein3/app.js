@@ -10,8 +10,8 @@
  * Last updated: 11. June 2016
  */
 
-var hostname = 'localhost'; 
-var port = 80;
+const hostname = 'localhost'; 
+const port = 80;
 
 var players = require('./JSON/players.json');
 
